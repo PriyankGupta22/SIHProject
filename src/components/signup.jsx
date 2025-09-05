@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import "./signup.css"
+import React, { useState } from 'react';
+import "./signup.css";
 
 const Signup = () => {
     const [name, setName] = useState("");
@@ -19,9 +19,8 @@ const Signup = () => {
             return;
         }
         setError("");
-        setSuccess("✅ Passwords matched! Signup successful.")
+        setSuccess("✅ Passwords matched! Signup successful.");
 
-        setError(""); // clear error if passwords match
         console.log("Name:", name);
         console.log("Email:", mail);
         console.log("Password:", pass);
@@ -29,67 +28,57 @@ const Signup = () => {
     };
 
     return (
-        <div className='container signup-box'>
-            <div className='head p-4'>
+        <div className="signup-container">
+            <div className="signup-header">
                 <h1>Sign Up</h1>
                 <p>
                     Welcome to Jharkhand{" "}
-                    {name && <span className="font-semibold">{name}</span>}
+                    {name && <span className="highlight">{name}</span>}
                 </p>
             </div>
 
             <form onSubmit={handleSubmit}>
-                <div className='p-4'>
+                <div className="form-group">
                     <input
-                        type='text'
+                        type="text"
                         value={name}
-                        placeholder='Enter your name'
+                        placeholder="Enter your name"
                         onChange={(e) => setName(e.target.value)}
-                        className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                 </div>
 
-                <div className='p-4'>
+                <div className="form-group">
                     <input
                         type="email"
                         value={mail}
-                        placeholder='Enter your email'
+                        placeholder="Enter your email"
                         onChange={(e) => setMail(e.target.value)}
-                        className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                 </div>
 
-                <div className='p-4 space-y-2'>
+                <div className="form-group">
                     <input
-                        type='password'
+                        type="password"
                         value={pass}
-                        placeholder='Enter your password'
+                        placeholder="Enter your password"
                         onChange={(e) => setPass(e.target.value)}
-                        className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <input
-                        type='password'
+                        type="password"
                         value={confirmPass}
-                        placeholder='Confirm your password'
+                        placeholder="Confirm your password"
                         onChange={(e) => setConfirmPass(e.target.value)}
-                        className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    {error && <p className="text-red-500 text-sm">{error}</p>}
-                    {success && <p className="text-green-600 text-sm">{success}</p>}
+                    {error && <p className="error">{error}</p>}
+                    {success && <p className="success">{success}</p>}
                 </div>
 
-                <div className="p-4 flex justify-center ">
-                    <button
-                        type="submit"
-                        className="bg-blue-500 text-white rounded-md px-6 py-2 hover:bg-blue-600 bottom-30"
-                    >
-                        Sign Up
-                    </button>
+                <div className="form-group button-wrapper">
+                    <button type="submit">Sign Up</button>
                 </div>
-
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default Signup
+export default Signup;
