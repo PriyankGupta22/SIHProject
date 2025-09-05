@@ -1,29 +1,58 @@
+/*  div{
+    border: 1px solid black;
+}  */
+
 .Logindiv{
     height: 400px;
     width: 300px;
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5;
 }
 
-
-
-.Logindiv input {
- margin: 0px 50px 20px 50px;
- width: 200px;
- height: 30px;
- 
+.headingLogin{
+    margin-left: 100px;
 }
+
+.textboxUser{
+    width:210px;
+    height:35px;
+    margin:0px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.textboxUser img{
+    height:28px;
+    width: 28px;
+}
+
+.textboxUser input {
+  height: 28px;
+  width: 170px;
+  border: 0px;
+}
+
+.textboxUser input:focus {
+  outline: none;
+  border: none;
+}
+
+
 .Logindiv button {
-  width: 100px;
+  width: 210px;
   height: 30px;
-  margin: 0px 100px 20px 100px;
+  margin: 0px 50px 20px 50px;
+  border-radius: 4px;
 }
-.Logindiv button:hover{
-    
-}
+
 
 
 
