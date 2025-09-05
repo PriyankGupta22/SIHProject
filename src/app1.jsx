@@ -1,29 +1,21 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Login from './Login/Login'
-import Signup from "./components/signup"
 import './App.css'
-
-import "./index.css"
+import './app1.css'
+import Signup from "./components/signup"
 
 function App() {
   
 
   return (
     <>
-
-<div className='login-pg'>
-     <Login/> 
-
-    <Signup/>
-</div>
+    <Signup></Signup>
     {/* <div className='container'>
      I am a new box 
      Priyanshu Bhadwe :)
     </div> */}
       
-
     </>
   )
 }
