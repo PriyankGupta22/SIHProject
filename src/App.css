@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,4 +42,8 @@
   color: #888;
 }
  */
->>>>>>> Stashed changes
+.login-pg{
+  display: flex;
+  gap: 200px;
+}
+
