@@ -5,13 +5,19 @@ import Login from "../src/Component/Login/Login.jsx"
 import CoverCard from './Component/Login/CoverCard/CoverCard.jsx'
 import LandingPage from './Component/Login/LandingPage/LandingPage.jsx'
 import FinalDestination from './Component/Destinations/finalDestination.jsx'
+import Footer from './components/Footer.jsx'
+
 import './App.css'
+import Signup from './components/signup.jsx'
 
 function App() {
   return (
   <div>
-    <LandingPage/>
+    {/* <LandingPage/>
     <FinalDestination/>
+    <Footer/> */}
+    {/* <Login/> */}
+    <Signup/>
   </div>
   )
 }

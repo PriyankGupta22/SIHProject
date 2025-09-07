@@ -34,7 +34,7 @@
 }
 
 .path{
-    height: 100vh;
+    height: 99vh;
     width:5px;
     animation: revealDown both;
     animation-timeline: view(20% 20%);
