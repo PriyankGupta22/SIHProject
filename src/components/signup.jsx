@@ -29,16 +29,16 @@ const Signup = () => {
   };
 
   return (
-    <div className="outerDiv">
-      <div className="Logindiv">
-        <h1 className="headLogin">Sign Up</h1>
-        <p>
+    <div className="page-wrapper">
+      <div className="signup-card">
+        <h1 className="signup-title">Sign Up</h1>
+        <p className="welcome-text">
           Welcome to Jharkhand{" "}
           {name && <span className="highlight">{name}</span>}
         </p>
 
         <form onSubmit={handleSubmit}>
-          <div className="textboxUser">
+          <div className="input-group">
             <input
               type="text"
               value={name}
@@ -47,7 +47,7 @@ const Signup = () => {
             />
           </div>
 
-          <div className="textboxUser">
+          <div className="input-group">
             <input
               type="email"
               value={mail}
@@ -56,7 +56,7 @@ const Signup = () => {
             />
           </div>
 
-          <div className="textboxUser">
+          <div className="input-group">
             <input
               type="password"
               value={pass}
@@ -65,7 +65,7 @@ const Signup = () => {
             />
           </div>
 
-          <div className="textboxUser">
+          <div className="input-group">
             <input
               type="password"
               value={confirmPass}
@@ -74,8 +74,7 @@ const Signup = () => {
             />
           </div>
 
-          {/* Optional OTP field if needed */}
-          <div className="textboxUser">
+          <div className="input-group">
             <input
               type="text"
               value={otp}
@@ -87,7 +86,7 @@ const Signup = () => {
           {error && <p className="error">{error}</p>}
           {success && <p className="success">{success}</p>}
 
-          <div className="submitButton">
+          <div className="button-area">
             <button
               type="submit"
               style={{
