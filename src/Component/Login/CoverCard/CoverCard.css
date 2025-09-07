@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.CardDiv{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    margin-left: 30vw;
+    position: absolute;
+    margin-top: 157px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

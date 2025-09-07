@@ -1,0 +1,41 @@
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.boxDivright{
+    margin-left: 250px;
+    border-radius: 8px;
+}
+
+.boxDivright {
+  margin-left: 250px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  transition: background-size 1s ease;
+  animation: fadeUp both;
+  animation-timeline: view();
+}
+
+.boxInforight{
+    animation: fadeUp both;
+    animation-timeline: view();
+}
+
+.boxDivright :hover{
+    background-size: 120%;
+}
+
+.picright{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

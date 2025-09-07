@@ -1,7 +1,7 @@
 import './Login.css'
 import { useState } from 'react'
-import user from '../assets/user.svg'
-import pass from '../assets/pass.svg'
+import user from '../../assets/user.svg'
+import pass from '../../assets/pass.svg'
 function Login() {
     const [userName,setuserName] = useState('')
     const [password,setpassword] = useState('')
@@ -11,15 +11,16 @@ function Login() {
     function changePassword (e) {
         setpassword(e.target.value)
     }
-    function handleSubmit(e) {
+    function handleSub(e) {
         setuserName('')
         setpassword('')
     }
   return (
-    <div className="Logindiv">
-    <form className="Loginform" onSubmit={handleSubmit}>
-    <div className='headingLogin'>
-        <h1>Login</h1>
+    <div className="outerDiv">
+      <div className="Logindiv">
+    <form className="Loginform" onSubmit={handleSub}>
+    <div>
+        <h1 className='headLogin'>Login</h1>
     </div>
     <div className='textboxUser'>
      <div className='icon'>
@@ -38,7 +39,7 @@ function Login() {
         <img src={pass} alt='password'/>
      </div>
         <input
-      type='text'
+      type='password'
       placeholder='Password'
       value={password}
       onChange={changePassword}
@@ -48,8 +49,10 @@ function Login() {
       <br/>
       <button 
       type='submit'
+      className='submitButton'
       >Login</button>
       </form>
+    </div>
     </div>
   )
 }

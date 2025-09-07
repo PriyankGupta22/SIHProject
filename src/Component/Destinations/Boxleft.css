@@ -1,0 +1,179 @@
+ /* div{
+    border: 1px solid black;
+}  */
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes revealDown {
+  0%   { 
+    clip-path: inset(0 0 100% 0); 
+} 
+  100% { 
+    clip-path: inset(0 0 0 0); 
+}  
+}
+
+
+.picleft{
+    width: 900px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.path{
+    height: 100vh;
+    width:5px;
+    animation: revealDown both;
+    animation-timeline: view(20% 20%);
+}
+
+.boxDiv{
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    animation: fadeUp both;
+    animation-timeline: view();
+}
+
+.boxInfo{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeUp both;
+    animation-timeline: view();
+}
+
+
+.boxloc{
+    margin: 0 60px 0 5px;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.boxrate{
+    margin: 0 5px 0 0;
+    width: 50px;
+    height: 20px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.toploc{
+    margin: 5px 5px 0 5px;
+    height: 50px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.boxtype{
+    margin: 0 0 0 10px;
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.boxtime{
+    margin: 0 120px 0px 5px;
+    width: 100px;
+    height: 20px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.boxexp{
+    margin: 0 10px 0 0;
+    height: 25px;
+    width: 40px;
+}
+
+.downloc{
+     margin: 66px 5px 5px 5px;
+    height: 50px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.boxtimepic img{
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+}
+
+.boxlocpic img{
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+}
+
+.boxratepic img{
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+}
+
+.boxInfotitle{
+    height: 50px;
+    width: 300px;
+    font-size: 30px; 
+}
+
+.boxInfocont{
+    height: 80px;
+    width: 300px;
+    font-size: 17px;;
+}
+
+
