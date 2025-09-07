@@ -13,11 +13,11 @@ import Signup from './components/signup.jsx'
 function App() {
   return (
   <div>
-    {/* <LandingPage/>
+    <LandingPage/>
     <FinalDestination/>
-    <Footer/> */}
-    {/* <Login/> */}
-    <Signup/>
+    <Footer/> 
+    <Login/>
+    <Signup/> 
   </div>
   )
 }
