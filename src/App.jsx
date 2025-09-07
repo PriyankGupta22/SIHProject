@@ -3,9 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Login from './Login/Login'
 import Signup from "./components/signup"
-import './App.css'
+
 
 import "./index.css"
+
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
      <Login/> 
 
     <Signup/>
+   
 </div>
     {/* <div className='container'>
      I am a new box 
