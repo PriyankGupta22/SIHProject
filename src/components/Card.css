@@ -15,7 +15,7 @@
   align-items: center;*/
      display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px; /* space between cards */
+  gap: 50px; /* space between cards */
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
 }
 
 .culture-card {
-    width: 400px;
+    width: 300px;
     height: 400px;
   border: 1px solid #ddd;
   border-radius: 12px;

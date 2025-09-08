@@ -46,10 +46,10 @@ function LandingPage() {
                 Natural Wonders.
             </div>
             <div className="discInfo">
-                 From misty hills and majestic waterfalls to ancient temples and vibrant tribal<br/>traditions,
-                 Jharkhand offers a journey 
-                 full of wonder. Whether you're seeking peace, thrill, 
-                 or cultural connection this land welcomes you with open arms.
+                 From misty hills and majestic waterfalls to ancient temples and<br/>
+                 vibrant tribal traditions,Jharkhand offers a journey full<br/>
+                 of wonder. Whether you're seeking peace, thrill, or cultural<br/>
+                 connection this land welcomes you with open arms.
             </div>
         </div>
     </div>

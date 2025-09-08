@@ -1,6 +1,6 @@
- /* div{
+/*   div{
     border: 1px solid black;
-}  */
+}   */
 
 @keyframes fadeUp{
     from{
@@ -34,10 +34,10 @@
 }
 
 .path{
-    height: 99vh;
+    height: 95vh;
     width:5px;
     animation: revealDown both;
-    animation-timeline: view(20% 20%);
+    animation-timeline: view(60% 50%);
 }
 
 .boxDiv{
@@ -103,7 +103,7 @@
 
 .boxtype{
     margin: 0 0 0 10px;
-    width: 70px;
+    width: 80px;
     height: 20px;
     border-radius: 10px;
     backdrop-filter: blur(1px);
@@ -173,7 +173,23 @@
 .boxInfocont{
     height: 80px;
     width: 300px;
-    font-size: 17px;;
+    font-size: 17px;
 }
+
+.viewButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.arview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 
 
