@@ -6,6 +6,7 @@ import CoverCard from './Component/Login/CoverCard/CoverCard.jsx'
 import LandingPage from './Component/Login/LandingPage/LandingPage.jsx'
 import FinalDestination from './Component/Destinations/finalDestination.jsx'
 import Footer from './components/Footer.jsx'
+import Card from './components/Card.jsx'
 
 import './App.css'
 import Signup from './components/signup.jsx'
@@ -16,6 +17,7 @@ function App() {
     <LandingPage/>
     <FinalDestination/>
     <Footer/> 
+    <Card/>
     <Login/>
     <Signup/> 
   </div>
